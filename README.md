@@ -1,6 +1,8 @@
 # MySmplRAG
 ## Description
 MySmplRAG is a user-friendly Retrieval-Augmented Generation (RAG) application featuring a graphical user interface built with Tkinter. This tool leverages ChromaDB for similarity searches and utilizes local LLM and Embedding models via LM Studio, providing a seamless and efficient experience for generating and retrieving relevant information.
+![image](https://github.com/user-attachments/assets/9fd81022-24de-4f3b-8c69-84702b357e8e)
+
 ## Installation and usage (Windows)
 
 1. **Download and install LM Studio** from [LM Studio](https://lmstudio.ai/)
