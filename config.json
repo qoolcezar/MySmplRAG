@@ -1,0 +1,30 @@
+{
+    "chroma_config": {
+        "CHROMA_DATA_PATH": "chroma_data/",
+        "default_COLLECTION_NAME": "Default_collection",
+        "OpenAI_embedding_config": {
+            "model_name": "nomic-ai/nomic-embed-text-v1.5-GGUF",
+            "api_base": "http://localhost:1234/v1",
+            "api_key": "lm-studio"
+        },
+        "default_doc_files_path": "prj_2/info_docs",
+        "add_to_collection_config": {
+            "max_words_per_chunk": 1000,
+            "overlap_words": 50
+        },
+        "query_nr_results": 2
+    },
+    "rag_config": {
+        "llm_agent_config": {
+            "model": "Orenguteng/Llama-3-8B-LexiFun-Uncensored-V1-GGUF/LexiFun-Llama-3-8B-Uncensored-V1_F16.gguf",
+            "base_url": "http://localhost:1234/v1",
+            "api_key": "lm-studio",
+            "cache_seed": null
+        },
+        "optimized_DB_query": false,
+        "optimized_DB_query_prompt_template": "You are a smart assistant designed to handle user queries efficiently by leveraging a vector database. \nYour task is twofold: first, analyze the given user query and provide an optimized version of it; second, return the most relevant keywords from the query. \nRespond with the optimized query first, followed by the keywords separated by commas, without any additional explanations.\nDon't repeate the keywords.\nDon't include in your response the words \"Optimized Query\" or \"Keywords\".\n\nUSER QUERY: \n",
+        "use_llm_response": true,
+        "response_prompt_template": "You are a very smart assistant. Consider the below text CHUNKS, please respond the the QUERY to the best of your ability.\nBe succinte and consider only the information in the apropiate CHUNKS.\n\nQUERY: \n",
+        "AUTOGEN_USE_DOCKER": "0"
+    }
+}
